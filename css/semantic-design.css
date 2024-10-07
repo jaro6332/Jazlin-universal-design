@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: rgb(254, 232, 197);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+p{
+    line-height: 1.5em;
+    color: rgb(80, 13, 79);
+    margin-bottom: 1.8em;
+
+}
+
+h1{
+    font-size: 1.7em;
+}
+
+h2{
+    font-size: 1.3em;
+}
+
+h3{
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:1.2em;
+}
+
+nav ul li {
+    list-style:none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.8em;
+    padding: 5px;
+}
+
+nav ul li a:link {
+    color:black
+}
+
+nav ul li a:visited {
+    color: rgb(51, 6, 53);
+}
+
+nav ul li a:hover{
+    color: white;
+    background:black;
+}
+
+nav ul li a:active {
+    color: blueviolet;
+}
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}

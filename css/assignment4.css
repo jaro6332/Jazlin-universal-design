@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+p{
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.8em;
+    text-indent: 1em;
+    font-family: helvetica;
+
+}
+
+h1{
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace
+    
+
+    
+    
+}
+
+h2{
+    font-size: 1.9em;
+    color:#BCBDBD
+}
+
+h3{
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:1.2em;
+}
+
+nav ul li {
+    list-style:none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+nav ul li a:link {
+    color:rgb(245, 217, 217)
+}
+
+nav ul li a:visited {
+    color: #939393;
+}
+
+nav ul li a:hover{
+    color: white;
+    background:#DB404D;
+}
+
+nav ul li a:active {
+    color: blueviolet;
+}
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    
+  
+  }
+
+  .imgcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
