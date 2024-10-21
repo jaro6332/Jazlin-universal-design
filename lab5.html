@@ -212,7 +212,38 @@
       </table>
       
       </section>
+      <form id="myform" method="post">
+        <fieldset>
+            <legend>
+                Vote for your favorite stars to be on the show!
+            </legend>
 
+            <label for="username">
+                what is the name of the celebrity?
+                <input type="text" id="username" placeholder="first last" required>
+            </label>
+            <label for="your-email">
+                what is your email?
+                <input type="email" id="your-email">
+            </label>
+            <label for="website">
+                what are they famous for?
+                <input type="url" id="website" placeholder="athlete">
+            </label>
+            <label for="phone">
+                what dance partner would suit them best?
+                <input type="tel" id="phone" minlength="10" pattern="(?=.*\d)" placeholder="Whitney Carson">
+            </label>
+            <label for="age">
+                How old are they?
+                <input type="number" id="age">
+            </label>
+            
+            <input type="submit">
+
+        </fieldset>
+
+    </form>
       
     
     
