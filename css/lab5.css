@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+table, th, td {
+    border-collapse: collapse;
+  }
+
+  th {
+    color:#090154;
+  }
+
+  td {
+    border-collapse: collapse;
+    border: 9px solid rgb(255, 255, 255);
+    padding: 26px;
+  }
+
+  td {
+    padding-right: 50px;
+    color:black;
+  }
+
+  caption {
+    color:#4A0082;
+    padding: 15px;
+  }
+
+body{
+    background: #BDBEFE;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+p{
+    line-height: 1.5em;
+    color: #454545;
+    margin-bottom: 1.8em;
+    text-indent: 1em;
+    font-family: helvetica;
+
+}
+
+h1{
+    color: #4A0082;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: "monserrat", sans-serif;
+    
+
+    
+    
+}
+
+h2{
+    font-size: 2.4em;
+    color:#4A0082;
+    font-family:"monserrat", sans-serif;
+
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:1.2em;
+    color: #9bb9b9;
+}
+
+nav ul li {
+    list-style:none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px;
+}
+
+nav ul li a:link {
+    color:#4A0082;
+}
+
+nav ul li a:visited {
+    color: #454545;
+}
+
+nav ul li a:hover{
+    color: white;
+    background:#d75dff;
+}
+
+nav ul li a:active {
+    color: rgb(129, 173, 255);
+}
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    
+  
+  }
+
+  .imgcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  figcaption{
+    color: #454545;
+  }
+
+  a{
+
+    color:#BCBDBD
+  }
+summary{
+    color:#661F41;
+    font-size: 2em;
+}
+
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
