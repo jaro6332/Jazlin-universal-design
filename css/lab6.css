@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&family=Quintessential&family=Updock&display=swap');
+body{
+    background-color: rgb(252, 252, 252);
+    font-family: sans-serif;
+    font-size: 15px;
+
+}
+.quintessential-regular {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/*css reset*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    font-family: "quintessential", serif;
+}
+h1{
+    font-family: "updock", cursive;
+    text-align: center;
+    font-size: 80px;
+    padding: .05em 0;
+    font-weight: normal;
+}
+h2{
+    font-family: "quintessential", serif;
+  font-weight: normal;
+  padding: .2em 0;
+  text-align: center;
+}
+h3 {
+  font-family: "quintessential", serif;
+  font-weight: normal;
+  padding: .2em 0;
+  
+}
+
+p {
+    margin: 1.8em 0;
+    line-height: 1.8em;
+    font-family:Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+}
+
+.imgcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+header{
+    color:white;
+    padding: 1.5em;
+    border: 1px black solid;
+   
+} 
+nav,
+main{
+    
+    padding: 1.5em;
+    border: 1px black solid;
+} 
+aside{
+    color: white;
+    padding: 1.5em;
+    border: 1px black solid;
+} 
+footer{
+    padding: 1.5em;
+    border: 1px black solid;
+    color: white;
+    font-family: "Quintessential", serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: gray;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:  
+    "heady     heady     heady"
+    "navvy     navvy     navvy"
+    "aside1    mainy     aside2"
+    "aside1    mainy     aside2"
+    "aside1    mainy     aside2"
+    "footy     footy     footy";
+}
+
+header {grid-area: heady; background:#EAA221;}
+nav {grid-area: navvy; background:tan}
+main {grid-area: mainy; background: rgb(255, 255, 255); max-height: 100%;}
+#aside1 {grid-area: aside1; background: #006341;}
+#aside2 {grid-area: aside2; background: #C8102E;}
+footer {grid-area: footy; background: rgb(0, 0, 0);}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    }
+
+nav ul li {
+        list-style: none
+      }
+
+
+      @media screen
+      and (min-width: 641px)
+      and (max-width: 900px)  {
+    .container {
+    grid-template-columns:
+       1fr 1fr;
+    grid-template-areas:
+      "heady heady"
+      "navvy navvy"
+      "mainy mainy"
+      "aside1 aside2"
+      "footy footy";
+    }
+    }
+
+    @media screen
+  and (max-width: 640px)  {
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "heady"
+  "mainy"
+  "aside1"
+  "aside2"
+  "navvy"
+  "footy";
+}
+nav ul {
+  flex-flow: column nowrap;
+  text-align: center;
+  
+}
+nav ul li a {
+  display: block;
+  padding: 10px 5px;
+  margin: 5px;
+  border: 1px black solid;
+  background: white;
+
+}
+}
