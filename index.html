@@ -10,6 +10,7 @@
             margin: 20px;
             padding: 0;
             background-color: #f7d1a6;
+            text-indent: 1em;
         }
         header {
             text-align: center;
@@ -29,29 +30,109 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        aside {
+            color: white;
+            padding: 1.5em;
+            border: 1px #D6B690 solid;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #f7d1a6;
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas:  
+                "heady     heady"
+                "navvy     navvy"
+                "mainy     aside2"
+                "mainy     aside2"
+                "footy     footy";
+        }
+
+        header { grid-area: heady; background: #f7d1a6; }
+        nav { grid-area: navvy; background: #f7d1a6; }
+        main { grid-area: mainy; background: #ffffff; max-height: 100%; }
+        #aside2 { grid-area: aside2; background: #D6B690; }
+
+        nav ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "heady"
+                    "navvy"
+                    "mainy"
+                    "aside2"
+                    "footy";
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "heady"
+                    "mainy"
+                    "aside2"
+                    "navvy"
+                    "footy";
+            }
+            nav ul {
+                flex-flow: column nowrap;
+                text-align: center;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px 5px;
+                margin: 5px;
+                border: 1px #D6B690;
+                background: white;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Jazlin Rodriguez</h1>
+            <h2>Universal Design Class Portal</h2>
+        </header>
 
-<header>
-    <h1>Jazlin Rodriguez</h1>
-    <h2>Universal Design Class Portal</h2>
-</header>
+        <nav>
+            <a href="pdfs/demographicassignment.pdf">Assignment 1</a>
+            <a href="pdfs/Normandiscussion-2.pdf">Assignment 2</a>
+            <a href="pdfs/unidesignlab1.pdf">Assignment 3</a>
+            <a href="https://jaro6332.github.io/Jazlin-universal-design/assignment4">Assignment 4</a>
+            <a href="https://jaro6332.github.io/Jazlin-universal-design/lab5">Assignment 5</a>
+            <a href="https://jaro6332.github.io/Jazlin-universal-design/lab6">Assignment 6</a>
+        </nav>
 
-<nav>
-    <a href="pdfs\demographicassignment.pdf">Assignment 1</a>
-    <a href="pdfs\Normandiscussion-2.pdf">Assignment 2</a>
-    <a href="pdfs\unidesignlab1.pdf">Assignment 3</a>
-    <a href="https://jaro6332.github.io/Jazlin-universal-design/assignment4">Assignment 4</a>
-    <a href="https://jaro6332.github.io/Jazlin-universal-design/lab5">Assignment 5</a>
-    <a href="https://jaro6332.github.io/Jazlin-universal-design/lab6">Assignment 6</a>
-</nav>
+        <section>
+            <h3>About Me</h3>
+            <p>Hi! My name is Jazlin Rodriguez. I'm a first-generation college student and a CTD Major. During my first 2 years at CU, I was a computer science major but found that CTD catered to my needs and wants perfectly. I love my major and am so proud of the work I’ve done in it.  I spend most of my time out of class working at Target and watching movies. I also love to watch baseball, especially in person at a game. Although I am a Colorado Rockies fan, I was given the amazing chance to watch game two of the World Series this year and had one of the best days of my life. 
 
-<section>
-    <h3>About Me</h3>
-    <p>Hi! My name is Jazlin Rodriguez. I'm a first gen college student and a CTD Major. I spend most of my time out of class working at Target and watching movies. I look forward to improving my skills and sharing my journey!</p>
-</section>
+            </p><p>Professionally, I hope to be a UX designer or just be able to work anywhere in the tech industry. As of recently, I’m just very grateful and excited to be the first one in my family to graduate from an institution like CU. I’m very proud to be able to enjoy the things I do and look forward to the future. :)
+                </p>
+        </section>
 
-
+        <aside id="aside2">
+            <figure>
+                <img src="img/me.jpg" alt="selfie of myself" class="imgcenter" width="200">
+                <figcaption><i>Picture of myself: brown hair, brown eyes.</i></figcaption>
+            </figure>
+        </aside>
+    </div>
 </body>
 </html>
