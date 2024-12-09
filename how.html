@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How-universal design </title>
+    <link href="css/project2.css" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#maincontent">Skip Navigation</a>
+    <div class="container-how">
+        <header>
+            <h1>Universal Design</h1>
+        </header>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href="project2.html">What</a></li>
+                <li><a href="why.html">Why</a></li>
+                <li><a href="#">How</a></li>
+            </ul>
+        </nav>
+        <main id="maincontent">
+            <section>
+            <h2>How can you impliment universal design?</h2>
+            <section>
+                <h3>WCAG</h3>
+                <p>The Web Content Accessibility Guidelines (WCAG) 2.0, developed by the World Wide Web Consortium (W3C), are a set of internationally recognized standards for making web content more accessible to people with disabilities. These guidelines are critical for ensuring that websites, applications, and digital documents are usable by everyone, including individuals with visual, auditory, cognitive, or physical disabilities.
+
+                </p>
+                <h4>The Four Principles of WCAG 2.0</h4>
+                <h4>POUR</h4>
+                <ul>
+                    <li>Perceivable - Users must be able to perceive the information being presented (it can't be invisible to their senses). Examples include, </li>
+                        <ul>Provide text alternatives for non-text content (e.g., alt text for images). </ul>
+                        <ul>Offer captions for videos and transcripts for audio content.</ul>
+                        <ul>Use sufficient contrast between text and background colors for readability.</ul>
+                    <li>Operable - Users must be able to operate the interface, regardless of the device or assistive technology they use. Examples include,</li>
+                    <ul>Ensure all functionalities are accessible via keyboard navigation. </ul>
+                        <ul>Avoid designing elements that could trigger seizures, such as flashing content.</ul>
+                        <ul>Provide clear navigation mechanisms, such as consistent menus.</ul>
+
+                    <li>Understandable - Content must be presented in a clear and predictable way, so users can comprehend it. Examples include,</li>
+                    <ul>Use plain language where possible and define technical terms.</ul>
+                    <ul>Ensure forms have clear labels and instructions.</ul>
+                    <ul>Provide feedback for user errors and suggestions for correction.</ul>
+                    <li>Robust - Content must be robust enough to work with a wide variety of technologies, including assistive devices. Examples include,</li>
+                    <ul>Use clean and valid HTML and CSS for compatibility.</ul>
+                    <ul>Test your site with screen readers and other assistive technologies.</ul>
+                    <ul>Ensure dynamic content updates are communicated to assistive technologies.</ul>
+                </ul>
+                <p>Each criterion also falls into one of three levels of compliance: A, AA, and AAA representing minimum, must have, and good to have respectively. For a list of all success criteria, including documentation on understanding and implementing them, visit the <a href="https://www.w3.org/TR/WCAG22/">WCAG official guidelines</a>.</p>
+            </section>
+            <section>
+                <h3>Coding practices</h3>
+                <p>The best way to ensure a usable site is by implementing accessible coding practices.</p>
+                <section>
+                    <h4>Semantic structure</h4>
+                    <p>Accessible code begins with making sure every item on the site serving any informational or interactive purpose (a.k.a. any purpose other than design) is defined semantically. This is necessary for browsers, search engines, and assistive technology to properly interpret your website.</p>
+                    <p>To properly implement semantic structure:</p>
+                    <ul>
+                        <li>Regions (header, footer, nav, main, etc.) should be properly defined</li>
+                        <li>Headings should be used in ascending order to properly represent their hierarchical meaning</li>
+                        <li>Use the correct list type for the information you are trying to convey</li>
+                        <li>Use <code>&lt;section&gt;</code> to group related content and <code>&lt;fieldset&gt;</code> to define a group of form elements (a.k.a widgets) with a shared purpose</li>
+                        <li>Use labels to properly define input fields</li>
+                        <li>Use headers in tables to define row and columns</li>
+                        <li>Utilize ARIA (Accessible Rich Internet Applications) to provide semantics or define interactions with assistive technology that HTML cannot define. Remember the first rule of ARIA is to use HTML instead unless it's impossible to provide accessibility without it</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Separation of content and design</h4>
+                    <p>Separating the design of a page from its content allows users to configure your site to meet their needs without impacting the information. To do this, all styling should be done only in CSS while the HTML holds only the content. A great example of this is <a href="https://csszengarden.com/">CSS Zen Garden</a> which displays the same HTML content many different ways by using different styling files. Separating your styling for your content will also benefit your future maintenance as the website can be entirely redesigned without affecting the content and vice versa.</p>
+                </section>
+                <section>
+                    <h4>Responsive design</h4>
+                    <figure>
+                        <img src="img/responsive_grids-scaled.jpeg" alt="a monitor, laptop, tablet, and two phones with the same content mocked up on their screens">
+                        <figcaption>Responsive design should look good and function well on any device</figcaption>
+                    </figure>
+                    <p>Responsive Design is web design that changes in response to a device's screen size. Responsive design can be implemented by using a grid-based CSS layout, flexible media, and CSS media queries to define behavior for certain screen sizes. It is recommended to build mobile first and practice progressive enhancement, using the main style sheet to define mobile design and media queries to define behavior for larger screen sizes, but desktop-first graceful degradation will also suffice.</p>
+                </section>
+            </section>
+
+            <section>
+                <h3>Accessibility Testing tools</h3>
+                <p>There are various tools you can use to test the accessibility of your site:</p>
+                <ul>
+                    <li>Wave & Silktide - These browser extensions help identify accessibility issues on your site. WAVE highlights errors directly on the page, while Silktide offers additional features, such as an in-browser screen reader, simulations for vision impairments and dyslexia, and a focus order overlay to analyze navigation.</li>
+                    <li>Validator.nu - Based on the W3C validator, this tool allows you to assess HTML for semantic accuracy and accessibility. It supports both live URLs and local code files.</li>
+                    <li>Adobe Color - This online tool assists in selecting color palettes that meet WCAG AA and AAA contrast standards. It also checks if your color choices are safe for users with color blindness.</li>
+                    <li>Outline extension - This extension generates a semantic outline of your website, helping you verify that the structure is logically organized for assistive technologies.</li>
+                    <li>Chrome's Dev Tools - Google Chrome's built-in developer tools offer powerful options for accessibility testing. Use the grid overlay for responsive design checks and the Lighthouse tool to generate detailed accessibility reports and evaluate your site’s adherence to coding best practices.</li>
+                    
+                    
+                </ul>
+            </section>
+            
+            </section>
+        </main>
+        
+        <footer>
+            <p> by Jazlin Rodriguez</p>
+            
+        </footer>
+    </div>
+</body>
+</html>
